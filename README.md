@@ -29,8 +29,8 @@ Download from [claude.ai/download](https://claude.ai/download). You'll need a Cl
 ### 2. Clone this repo
 
 ```bash
-git clone https://github.com/[your-handle]/se-assistant.git
-cd se-assistant
+git clone https://github.com/tmth-studio/venture-assistant.git
+cd venture-assistant
 ```
 
 ### 3. Open in Claude Code
