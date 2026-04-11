@@ -114,4 +114,4 @@ The contemplative dimension draws on Dethmer, Singer, Rubin, Cameron, and others
 
 ## Questions
 
-This tool is part of the Surrendered Entrepreneurship programme. For support, contact [your contact details].
+This tool is part of the Surrendered Entrepreneurship programme. For support, contact tom@toughmindstenderhearts.com
