@@ -4,7 +4,7 @@ Guide a founder through the full IVE venture design sequence — from Prime Comm
 
 **The dual register:** Engineering questions (BALM) pose the questions. Contemplation and surrender give the answers. At each stage, create space for the founder to listen before they answer analytically. Gnosis-based answers are as valid as data-based answers — receive them as such.
 
-**The design loop:** The process is not linear. Each requirement is solved by diagnosing the bottleneck, building a theorem (chain of logic from established evidence), shaping the product, and simulating. If the simulation fails, return to the specific requirement that's under-solved — not to the beginning.
+**The design loop:** The process is not linear. Each requirement is solved by diagnosing the bottleneck, building a theorem (chain of logic from established evidence), shaping the product, and testing the required price : target price ratio. The ratio is tested at every requirement — not only at the final simulation. R1 builds the unit cost model (PVC) and tests it against the target price range. R2 establishes the Target Price from the KMC and tests it against the Required ARPC. R3 models the scaling cost (SC) and tests fundability. Only then is the ARM-based simulation run. If the simulation fails, return to the specific requirement that's under-solved — not to the beginning.
 
 ---
 
@@ -49,26 +49,24 @@ Save to `01-Venture_Thesis/PCO.md`.
 
 ---
 
-## STAGE 2: PCO Verification — Required Annual Revenue per Customer
+## STAGE 2: Required Annual Revenue per Customer
 
 **Teach this:**
-> "Before we design anything, we check whether the PCO is worth pursuing — whether the problem is large enough to support a viable venture. Given the investment this venture requires, what must you charge each customer annually to generate the return? Is that number plausible given what the customer is losing?"
+> "Before we design anything, we need one number — a reference point that everything downstream gets measured against. Given the investment this venture requires, what must you charge each customer annually to generate the return? This isn't a test. It's a calculation. The number it produces is the reference point you'll use throughout the design process."
 
 **Work through four inputs:**
 1. Investment period — how many years to scale? (Typically 5–10)
-2. Target IRR — what return do investors require? (Typically 25–40%)
+2. Required annual return on investment — what return do investors require? (Typically 25–40%)
 3. Required investment capital — total capital to reach scale
 4. At-scale customer base — paying customers at end of investment period
 
 **Calculate:**
-- Required investment × (1 + IRR)^years = Required future company value
-- ÷ FCF multiple (7–10) = Required annual free cash flow
+- Required investment × (1 + required annual return)^years = Required future company value
+- ÷ free cash flow multiple (7–10) = Required annual free cash flow
 - ÷ margin (20–30%) = Required annual revenue
 - ÷ at-scale customer base = **Required Annual Revenue per Customer**
 
-**Test:** Is the Required Annual Revenue per Customer a plausible fraction of the customer's annual loss? If not — broaden the PCO, find a larger version of the cost, or reduce required investment.
-
-**Gate:** Required Annual Revenue per Customer < customer's annual loss, within credible payment range.
+**Output:** Required Annual Revenue per Customer — carry forward as the reference point for Requirement 1 (unit cost), Requirement 2 (target price test), and Requirement 3 (scaling cost fundability).
 
 Save to `01-Venture_Thesis/PCO.md` (append).
 
@@ -87,13 +85,16 @@ Save to `01-Venture_Thesis/PCO.md` (append).
 
 **Listen for:** Architectural redesign ✓ / Operational optimisation ✗
 
-**Sense-check with numbers:**
-> "What does the conventional model cost to deliver? With the CLO removed, what does your model cost? Order of magnitude is fine — the test is whether it's plausibly below what a customer would pay."
+**Build the unit cost model:**
+> "Requirement 1 is not complete until we have a number. The direct unit cost is every cost that scales with each transaction — materials, delivery, direct labour per unit, per-unit platform costs. Not overhead. Not management. With the critical limiting operation removed, what does it cost to deliver one unit at scale? Now measure it against the Required Annual Revenue per Customer from Stage 2. The direct unit cost should be below 40–50% of that number — to leave room for operating costs, scaling costs, and investor return. If it's already above 50%, the critical limiting operation hasn't been sufficiently eliminated."
+
+- Direct unit cost < 50% of Required Annual Revenue per Customer → **proceed**
+- Direct unit cost ≥ 50% → **return to design**
 
 **Build your theorem:**
-> "What established principle, documented precedent, or analogous case tells you that eliminating this CLO will produce the cost reduction you're projecting? A hypothesis says we think this will work. A theorem says this follows from what we know. What's your chain of logic, and what's the single assumption it depends on?"
+> "What established principle, documented precedent, or analogous case tells you that eliminating this critical limiting operation will produce the cost reduction you're projecting? A hypothesis says we think this will work. A theorem says this follows from what we know. What's your chain of logic, and what's the single assumption it depends on?"
 
-**Gate:** CLO identified, design choice that eliminates it, order-of-magnitude cost estimate, and a theorem grounded in evidence.
+**Gate:** Critical limiting operation identified, design choice that eliminates it, direct unit cost passing ratio test (below 50% of Required Annual Revenue per Customer), and a theorem grounded in evidence.
 
 Save to `02-Requirements/R1/R1-Verification.md`.
 
@@ -110,16 +111,20 @@ Save to `02-Requirements/R1/R1-Verification.md`.
 **Then ask:**
 > "What is your customer actually losing right now — in concrete, measurable terms — because this problem isn't solved? Put a number on it."
 
-**Sense-check with numbers:**
-> "KMC × 20–30% = your credible target price range. What is the KMC? What's the target price? Does it cover the Required Annual Revenue per Customer from Stage 2?"
+**Establish the Target Price:**
+> "Target Price = KMC × 20–30%. Calculate it now — this is the ceiling your venture must stay beneath."
 
-**R2 cross-check:**
-Is the KMC large enough that the customer could credibly pay the Required Annual Revenue per Customer? (KMC × 20–30% ≥ Required Annual Revenue per Customer)
+**Required price : target price ratio — R2 tests:**
+- Test 1: Required ARPC ≤ Target Price? If not — structural problem, return to redesign.
+- Test 2: Gross Margin = Target Price − PVC (from R1). Gross Margin / Target Price ≥ 50%? If not — no room left for RC and IC, return to redesign.
+
+- Both tests pass → **proceed**
+- Either fails → **return to design**
 
 **Build your theorem:**
 > "Why will customers pay? Not because the product is valuable — that's circular. Chain of reasoning: KMC is £X, they currently spend £Y on inadequate solutions, comparable solutions that eliminate analogous costs command £Z range. What's the single assumption that, if wrong, would break the price?"
 
-**Gate:** Specific quantified KMC, credible target price (20–30% of KMC), cross-checked against Required Annual Revenue per Customer, with a theorem for why customers will pay.
+**Gate:** Specific quantified KMC, explicit Target Price (KMC × 20–30%), both ratio tests passed, and a theorem for why customers will pay.
 
 Save to `02-Requirements/R2/R2-Verification.md`.
 
@@ -136,13 +141,20 @@ Save to `02-Requirements/R2/R2-Verification.md`.
 **Then ask:**
 > "As you scale, which activity requires you to spend money long before you recover it in revenue? How long is that gap, and have you designed around it?"
 
-**Sense-check with numbers:**
-> "At 100 customers — how much working capital would this tie up? How many months to recover? Is that fundable?"
+**Build the scaling cost model (SC):**
+> "SC is the total investment required before revenue covers costs. Work through: (1) Cost to launch the first LMU before a single customer pays. (2) Months before that LMU is cash-flow positive. (3) Central infrastructure required before any LMU can operate. That gives your SC estimate."
+
+**Required price : target price ratio — R3 test:**
+- Does the SC sit within the investment envelope from Stage 2?
+- Is the maximum cash outlay at any point fundable given the investment thesis?
+
+- Both pass → **proceed**
+- Either fails → **return to design**
 
 **Build your theorem:**
 > "Why will your design choice actually close the timing gap at scale? What's the evidence it works — not at five customers, but at a hundred? What's the single assumption that, if wrong, would recreate the cash timing problem?"
 
-**Gate:** Scaling cost bottleneck identified, design choice that addresses the timing, working capital estimate at 50–100 customers, and a theorem for why it holds.
+**Gate:** Scaling cost bottleneck identified, design choice that addresses the timing, SC estimate passing fundability test, and a theorem for why it holds.
 
 Save to `02-Requirements/R3/R3-Verification.md`.
 
@@ -314,7 +326,20 @@ Save to `03-Business_Architecture/ARM/ARM.md`.
 
 ## STAGE 16: Logic Stress-Test
 
-Before running the financial simulation, challenge the three F1 theorems.
+**Pre-simulation ratio summary:**
+
+Before the logic challenge, surface the three numbers built during R1–R3:
+
+> "Let's see where the model stands before we add operating costs and cost of capital:
+> - PVC (R1): £___
+> - Target Price (R2): £___
+> - Gross Margin: £___ (___% of Target Price)
+> - Required ARPC (Stage 2): £___
+> - SC estimate (R3): £___
+>
+> The ARM will add RC and IC to PVC. Together they become the Required Price. Is there plausible room for RC and IC within the gross margin? If it looks structurally marginal, return to the design now rather than after the full ARM is built."
+
+**Then challenge the three F1 theorems:**
 
 For each of R1, R2, and R3:
 1. State the chain of logic in 3–5 steps
@@ -328,7 +353,7 @@ For each of R1, R2, and R3:
 
 **If logic fails:** Return to that requirement and rebuild the theorem before simulating.
 
-**Gate:** All three theorems survive challenge. Critical assumptions are identified, named, and defensible.
+**Gate:** Pre-simulation ratio looks structurally viable. All three theorems survive challenge. Critical assumptions identified, named, and defensible.
 
 ---
 
