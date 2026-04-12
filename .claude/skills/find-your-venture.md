@@ -131,7 +131,7 @@ Land this with energy:
 
 > What comes next is different from anything most entrepreneurs experience. There's a process — a rigorous, engineering-grade process, the kind applied in aerospace and infrastructure — that takes your problem and builds a venture from it, requirement by requirement. Not guessing. Not iterating blindly. Designing. It dramatically increases the odds that what you build is actually viable before you've spent a penny.
 
-> This is a genuine advance in how ventures get created. MIT Sloan Management Review are publishing a paper on it. And you're at the start of it.
+> This is a genuine advance in how ventures get created. And you're at the start of it.
 
 > When you're ready — `/venture-design` is the next step."
 
