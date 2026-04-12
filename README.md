@@ -2,7 +2,7 @@
 
 An AI-powered venture design tool that guides you through the engineering of a structurally viable business — before you spend a penny building it.
 
-Based on the Business Architecture Framework (BAF) and the Integrated Venture Engineering (IVE) methodology. Integrates systems engineering rigour with contemplative practice.
+Built on the Integrated Venture Engineering (IVE) methodology — a systems engineering-based approach to venture design developed at Cornell University, the University of Oxford, and the University of Cambridge, in collaboration with Barclays, BMW, Disney, P&G, DuPont, Mars, and the International Finance Corporation. Combines engineering rigour with a contemplative approach to decision-making.
 
 ---
 
@@ -68,18 +68,19 @@ Once you're in Claude Code, you have two paths:
 
 Your work is saved as real files in this folder — not trapped in a chat window. Every session picks up exactly where the last one left off.
 
-The process follows 10 stages:
+The process follows 11 stages:
 
 1. **PCO** — Define the Prime Commercial Opportunity
-2. **PCO Verification** — Calculate the Required Annual Revenue per Customer
+2. **Required Annual Revenue per Customer** — Calculate the reference point for all downstream cost testing
 3. **R1** — Circumvent the at-scale cost bottleneck
 4. **R2** — Eliminate the customer's value bottleneck
 5. **R3** — Circumvent the scaling cash bottleneck
-6. **CTM** — Map the Customer Transformation Model
-7. **AOM** — Build the At-Scale Operational Model
-8. **ARM** — Build the At-Scale Resourcing Model
-9. **Logic Stress-Test** — Challenge the theorems before the numbers
-10. **Financial Simulation** — Calculate required price vs target price and FMOS
+6. **R4–R10** — Solve the remaining seven requirements (adoption, retention, scaling, competition)
+7. **CTM** — Map the Customer Transformation Model
+8. **AOM** — Build the At-Scale Operational Model
+9. **ARM** — Build the At-Scale Resourcing Model
+10. **Logic Stress-Test** — Pre-simulation ratio summary, then challenge the three theorems
+11. **Financial Simulation** — Calculate required price vs target price and FMOS
 
 Each stage has a gate. Work doesn't progress until the gate is passed. If the financial simulation fails, the assistant routes you back to the specific requirement that's under-solved — not to the beginning.
 
@@ -90,19 +91,19 @@ Each stage has a gate. Work doesn't progress until the gate is passed. If the fi
 Everything you produce is saved here:
 
 ```
-01-Venture_Thesis/       Your PCO and investment thesis
-02-Requirements/         R1–R3 verification documents (and R4–R10 later)
+01-Venture_Thesis/        Your PCO and investment thesis
+02-Requirements/          R1–R10 verification documents
 03-Business_Architecture/ CTM, AOM, ARM
-04-Financial_Simulation/ Financial model outputs
-05-Ventures/             Active venture overview pages
-06-Resources/            Methodology guides (read-only reference)
+04-Financial_Simulation/  Financial model outputs
+05-Ventures/              Active venture overview pages
+06-Resources/             Methodology guides (read-only reference)
 ```
 
 ---
 
 ## The Methodology
 
-This tool is built on the Integrated Venture Engineering (IVE) methodology, developed through ventures across 40+ countries and documented in academic and practitioner research including:
+This tool is built on the Integrated Venture Engineering (IVE) methodology, developed at the Built2Hold Program, Center for Global Sustainable Enterprise at Cornell University — and documented in academic and practitioner research including:
 
 - *Engineering New Market Ventures for Profitability* (Simanis)
 - *The Market Creator's Dilemma* (Simanis & Donohue, MIT Sloan Management Review)
