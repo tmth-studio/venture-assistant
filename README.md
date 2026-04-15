@@ -57,6 +57,16 @@ Once you're in Claude Code, you have two paths:
 /find-your-venture
 ```
 
+**If you've completed the design and are ready to build:**
+```
+/venture-prototype
+```
+
+**Once the MVV is ready and you're starting sales:**
+```
+/venture-pilot
+```
+
 **To review your current progress:**
 ```
 /f1-review
@@ -68,7 +78,7 @@ Once you're in Claude Code, you have two paths:
 
 Your work is saved as real files in this folder — not trapped in a chat window. Every session picks up exactly where the last one left off.
 
-The process follows 11 stages:
+**Design phase** (`/venture-design`) — 11 stages:
 
 1. **PCO** — Define the Prime Commercial Opportunity
 2. **Required Annual Revenue per Customer** — Calculate the reference point for all downstream cost testing
@@ -83,6 +93,26 @@ The process follows 11 stages:
 11. **Financial Simulation** — Calculate required price vs target price and FMOS
 
 Each stage has a gate. Work doesn't progress until the gate is passed. If the financial simulation fails, the assistant routes you back to the specific requirement that's under-solved — not to the beginning.
+
+**Prototype phase** (`/venture-prototype`) — Build the Minimum Viable Venture:
+
+1. **Pre-work** — Assign team roles (Field Lead, accounting, sales), set up PM infrastructure
+2. **Customer Journey** — Full experience from awareness through use, payment, return (co-creation, rapid prototyping, simulation)
+3. **Brand** — Positioning, name, collateral, sales pitches
+4. **Value Chain** — Suppliers, production, distribution, back office (minimum cap-ex)
+5. **Management Systems** — KPI dashboard, financial tracking, reporting cadence
+6. **HR** — Hire and train salespeople, run sales simulations
+7. **Market Seeding** — Build first wave of customers during prototyping via seed groups
+
+Gate: MVV systematised across all five components. Ready to start pilot sales.
+
+**Pilot phase** (`/venture-pilot`) — Prove the operating unit works:
+
+1. **Pilot Design** — Geography, configuration, timeline, monthly sales targets
+2. **Launch** — First sales with the MVV
+3. **Tracking** — Monthly operational, financial, and customer indicators vs. projections
+4. **Model Evolution** — Test and iterate operational activities as you learn
+5. **Go/No-Go Decision** — Scale / Pivot / Close Down, based on FMOS recalculated with real data
 
 ---
 
