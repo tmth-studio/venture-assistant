@@ -143,6 +143,93 @@ The number of hierarchical levels depends on:
 
 ---
 
+## The Two-Pass Approach (C1 → C2)
+
+Build the AOM in two passes. Do not label with product codes on the first pass.
+
+**Pass 1 (C1) — plain language activities:**
+Draw the diagram with activity descriptions in plain language on each flow:
+- "Attracting claimants who are at the end of their rope"
+- "Case analysis and valuation for claimant"
+- "Cash payment for claim"
+
+This forces clarity about what is actually happening before the formal labelling is applied. It also makes the diagram readable to people who don't know the IVE notation.
+
+**Pass 2 (C2) — apply product labels:**
+Replace plain language descriptions with formal product codes (WP1, CP2, PP1, etc.) that trace back to the CTM. The diagram structure does not change — only the labelling.
+
+**Why two passes:** Founders who label first tend to design around the notation rather than around the actual operation. The activity description forces operational thinking first.
+
+---
+
+## Spatial Layout Conventions (from Calmly example)
+
+### Horizontal axis — distance from head office
+```
+[HQ / Country Office] ←————————————————→ [Customer home]
+       Far left                                  Far right
+```
+
+- Head office and central infrastructure: far left
+- Intermediary platforms and channels: centre
+- End users (customers, users): far right
+- Third-party actors (courts, banks, partners): positioned by functional relationship
+
+### Vertical axis — product type layer
+```
+Upper third:    Communications flows (blue dashed)
+Middle third:   Working product flows (red dashed/solid)
+Lower third:    Payment and partner flows (green/purple)
+```
+
+### Flow line conventions
+- **Dashed lines** = digital flows (platform-mediated, remote)
+- **Solid lines** = physical movement (person travels, physical product moves)
+- **Arrow direction** = direction of product delivery (not always left-to-right — cash flows right-to-left)
+- **Colour** = product type (red=WP, blue=CP, green=PP, purple=Partner)
+
+### Operating unit boundary
+- **Dashed rectangle** = LMU boundary. Everything inside replicates when you scale.
+- HQ and central bank/infrastructure sit **outside** the LMU boundary
+- Label the LMU boundary with: unit count at scale + TRM (target reachable market) per unit
+
+**Calmly example:**
+> "Last-Mile Operating Unit: 170 units (bounded around Country Courts), each with a TRM of 51,370 disputes"
+
+This single label communicates the scaling logic: 170 replications of the same LMU = national coverage.
+
+---
+
+## Worked Example — Calmly (Debt Collection)
+
+**Places:**
+| Place | Position | Role |
+|-------|----------|------|
+| Calmly Country HQ + Debt Collection | Far left | Making: case management, legal ops |
+| Calmly Digital Platform | Centre-left | Selling + Making: interface for all flows |
+| Marketing Site | Top centre | Marketing: TV campaign, targeted comms |
+| Calmly Bank | Bottom left | Payment: holds claim funds |
+| Claimant Home | Right | Using: where claimant accesses the product |
+| Defendant Home | Right (below claimant) | Using: where defendant receives comms |
+| Small Claims Court | Bottom right | Using: legal escalation point |
+
+**Flows (C2 labels):**
+- CP1 (blue, upper): Marketing site → Claimant — attracting claimants at end of their rope
+- WP1 (red): Platform → Claimant — case analysis and valuation
+- WP2 (red): Platform → Claimant — contract for claim
+- WP3 (red): Bank → Claimant — cash payment for claim
+- CP2 (blue): Platform → Defendant — communication that claim is owned by a claim fund
+- WP4 (red): Platform → Defendant — settlement offer
+- WP5 (red): HQ → Court — legal escalation
+- WP6 (red): HQ → Defendant — increasing settlement offer
+- PP1 (green): Defendant → Calmly Bank — invoice for settlement
+
+**Note on anti-customers:** Calmly has two customer tracks — Claimant (primary customer) and Defendant (anti-customer). The AOM shows both. Maximising value for the claimant requires reducing value for the defendant — this tension is made visible in the diagram by showing both flows simultaneously.
+
+**Erik Simanis note (from working session):** "Show any flow of cash out of Calmly and cash into Calmly separately from the payment product." Cash flows (operational costs going out, revenue coming in) should be traceable independently of the product delivery flows.
+
+---
+
 ## Common AOM Failures
 
 | Failure | Signal |
