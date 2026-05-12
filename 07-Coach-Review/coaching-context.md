@@ -1,52 +1,46 @@
-# Coaching Context — Ben Depraz
+# Coaching Context
 
-*Read by the SE assistant at session start. Updated by Tom before each between-session block.*
-
----
-
-## About the coaching relationship
-
-**Coach:** Tom Manuel
-**Client:** Ben Depraz
-**Format:** Executive coaching engagement. Tom and Ben meet periodically (phone / video). Between sessions, Ben works independently with the SE assistant. At the end of each between-session block, Ben runs `/session-prep` and pastes the brief to Tom via WhatsApp or email before their next call.
-
-**Why Ben is here:**
-Ben is a high-end executive coach — presence-based, one-to-one, referral-only. His model works. It also has a structural ceiling: his presence is the bottleneck. Every unit of value he delivers requires 45 minutes of his time. He cannot scale within that model without becoming a different kind of coach. His framing: *"increasing contribution without having to take massive personal or financial risks."* He is not looking to build a startup. He is looking for a form factor that extends his reach without destroying what makes him good.
-
-**What the CTM analysis revealed (May 2026):**
-- The CLO is Ben himself — not a process, not methodology, but presence
-- WP3 (between-session work) is the one underused leverage point where value is delivered without Ben's real-time presence
-- The client's accumulating insight is not externalised — it lives in their memory, not a system
-- Distribution is referral-only — any redesign must respect this, not fight it
-- The R1 question: what form factor delivers the transformational outcome without requiring Ben's presence for every unit of value?
+*Tom fills this in before handing the repo to a client. The assistant reads it at the start of each session.*
 
 ---
 
-## Current exercise
+## Client
 
-**Stage:** F1 — Concept Design
-**Entry point:** `/find-your-venture`
-**Status:** Not yet started. Ben has no defined venture idea. The `/find-your-venture` skill works through the BALM requirements as questions that reveal the right problem to solve. Start here.
+**Name:** [Client name]
+**Role:** [Client role and organisation]
 
-**Tom's instruction for this block:**
-Ben should begin with `/find-your-venture`. The assistant should move at Ben's pace — not push. If Ben arrives at something that feels forced or analytical rather than genuine, slow down. The CTM is complete; Ben knows the structural picture. This block is about listening for what wants to be built, not deducing it.
+[2–3 sentences on who this person is and how they work. What matters about their context — professional background, how they think, what pace they operate at.]
 
 ---
 
-## How to calibrate for Ben
+## The Coaching Relationship
 
-- **Pace:** Slow. Ben is a contemplative practitioner. He will sit with questions. Don't interpret silence as stuckness.
-- **Depth:** High. Ben works at the level of structure, not surface. He will notice if a question is too shallow.
-- **Autonomy:** Respect it. Ben is a senior professional. Don't over-explain or over-scaffold. Teach once, then trust.
-- **Between-session prompts:** When Ben reaches a natural stopping point — end of a stage, or when he's clearly tired — prompt him to run `/session-prep` rather than push further.
-- **What Tom wants to see:** Whether Ben is finding something genuine, or constructing an answer. The session-prep brief will tell Tom this. Don't paper over doubt — surface it.
+[Describe the coaching relationship. How long have they been working together? What is the focus of the coaching? Any relevant relational context the assistant should hold.]
 
 ---
 
-## Session log
+## Current Territory
 
-| Date | Exercise | Outcome | Tom's notes |
-|------|----------|---------|-------------|
-| — | — | — | — |
+[What is the client exploring? Do they have a defined venture idea, or are they still in discovery? What has surfaced in coaching conversations so far — observations, instincts, dismissed ideas, recurring themes?]
 
-*Tom updates this after each coaching call.*
+**Entry point:** [Which skill to start with — `/find-your-venture` if no idea yet, `/venture-design` if an idea exists.]
+
+---
+
+## Current Exercise
+
+*Tom updates this before each between-session block.*
+
+**Exercise set:** —
+**Date set:** —
+**What Tom wants the client to produce:** —
+
+---
+
+## Notes for the Assistant
+
+[Anything the assistant needs to know about how to work with this specific person:
+- Pace — do they move fast or need space?
+- Register — are they analytical or contemplative or both?
+- Patterns to watch for — forcing, self-coaching, avoidance
+- Anything from coaching sessions that's relevant to how the methodology will land]
